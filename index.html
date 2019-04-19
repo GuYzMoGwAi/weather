@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Météo</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="witdh=device, initial-scale=1.0">
+
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
+
+
+</head>
+
+<body>
+
+    <section id="app">
+        <h1>
+            <!-- <span id="ville">La Roche-Sur-Yon</span>  -->
+            <form onsubmit="getWeatherByCity()" action="#">
+                <input id="ville">
+                <button type="submit">Météo</button>
+            </form>
+
+            <p id="name"></p>
+
+            <!-- <span class="tooltip">Tapez une autre ville si vous le souhaitez</span> -->
+        </h1>
+        <i class="wi wi-day-rain"></i>
+        <h2>
+            <span id="temperature">25</span> (<span id="conditions"></span>)
+
+        </h2>
+
+    </section>
+
+
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
